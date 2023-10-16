@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <script src="exercices.js"></script>
+
+    <title>Module 01</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="alert alert-success mt-5" role="alert">
+        <h4 class="alert-heading">Applications Web et Bases de données</h4>
+        <p class="mb-0">Exercices module 01</p>
+        <hr>
+        <p class="mb-0">Pour tous les exercices, vous devez écrire l'algorithme qui effectue les tâches demandées. 
+          Le contenu des variables est appelé à changer.</p>
+      </div>
+    </div>
+
+    <div class="container">
+          <h2>Question 1</h2>
+          <div class="alert alert-secondary mt-3" role="alert">
+            <p class="mb-0">Considérant que les notes dans la variable <code>etudiant</code> sont sur 10, 
+              retournez dans un tableau de chaines (string) chaque nom suivi de sa note sur 100.</p>
+          </div>
+          <button 
+            type="button" 
+            class="btn btn-primary me-3 mb-3" 
+            onclick="document.getElementById('reponse1').textContent = Question1()"
+          >
+            Afficher la réponse
+          </button>
+          <div id="reponse1" class="d-inline-block"></div>
+    </div>
+
+    <div class="container">
+      <h2>Question 2</h2>
+      <div class="alert alert-secondary mt-3" role="alert">
+        <p class="mb-0">Retournez dans un tableau les noms des étudiants selon l'ordre croissant des matricules.</p>
+      </div>
+      <button 
+        type="button" 
+        class="btn btn-primary me-3 mb-3" 
+        onclick="document.getElementById('reponse2').textContent = Question2()"
+      >
+        Afficher la réponse
+      </button>
+      <div id="reponse2" class="d-inline-block"></div>
+    </div>
+    
+    <div class="container">
+      <h2>Question 3</h2>
+      <div class="alert alert-secondary mt-3" role="alert">
+        <p class="mb-0">Retournez dans un tableau les noms des étudiants en échec.</p>
+      </div>
+      <button 
+        type="button" 
+        class="btn btn-primary me-3 mb-3" 
+        onclick="document.getElementById('reponse3').textContent = Question3()" 
+      >
+        Afficher la réponse
+      </button>
+      <div id="reponse3" class="d-inline-block"></div>
+    </div>
+
+    <div class="container">
+      <h2>Question 4</h2>
+      <div class="alert alert-secondary mt-3" role="alert">
+        <p class="mb-0">Calculez la moyenne du groupe sur 100.</p>
+      </div>
+      <button 
+        type="button" 
+        class="btn btn-primary me-3 mb-3" 
+        onclick="document.getElementById('reponse4').textContent = Question4()"
+      >
+        Afficher la réponse
+      </button>
+      <div id="reponse4" class="d-inline-block"></div>
+    </div>
+
+    <div class="container">
+      <h2>Question 5</h2>
+      <div class="alert alert-secondary mt-3" role="alert">
+        <p class="mb-0">Calculez l'écart type du groupe du 100.</p>
+      </div>
+      <button
+        type="button" 
+        class="btn btn-primary me-3 mb-3" 
+        onclick="document.getElementById('reponse5').textContent = Question5()"
+      >
+        Afficher la réponse
+      </button>
+      <div id="reponse5" class="d-inline-block"></div>
+    </div>    
+
+    <div class="container">
+      <h2>Question 6</h2>
+      <div class="alert alert-secondary mt-3" role="alert">
+        <p class="mb-0">Retournez dans un tableau le nom complet des étudiants dont le nom de famille est 
+          plus petit ou égal à 6 caractères.</p>
+      </div>
+      <button 
+        type="button" 
+        class="btn btn-primary me-3 mb-3" 
+        onclick="document.getElementById('reponse6').textContent = Question6()"
+      >
+        Afficher la réponse
+      </button>
+      <div id="reponse6" class="d-inline-block"></div>
+    </div>   
+
+    <div class="container">
+      <h2>Question 7</h2>
+      <div class="alert alert-secondary mt-3" role="alert">
+        <p class="mb-0">Retournez dans un tableau tous les noms de étudiants, 
+          où chaque nom est précédé et suivi de 3 étoiles (ex.: *** Adam Bernard ***).</i></p>
+      </div>
+      <button 
+        type="button" 
+        class="btn btn-primary me-3 mb-3" 
+        onclick="document.getElementById('reponse7').textContent = Question7()"
+      >
+        Afficher la réponse
+      </button>
+      <div id="reponse7" class="d-inline-block"></div>
+    </div>   
+
+    <div class="container mb-5">
+      <h2>Question 8</h2>
+      <div class="alert alert-secondary mt-3" role="alert">
+        <p class="mb-0">À partir du tableau défini dans la fonction <code>Question8()</code>,
+          retournez un tableau sans les doublons.</p>
+      </div>
+      <button 
+        type="button" 
+        class="btn btn-primary me-3 mb-3" 
+        onclick="document.getElementById('reponse8').textContent = Question8()"
+      >
+        Afficher la réponse
+      </button>
+      <div id="reponse8" class="d-inline-block"></div>
+    </div>   
+
+    <div class="container mb-5">
+      <h2>Question 9</h2>
+      <div class="alert alert-secondary mt-3" role="alert">
+        <p class="mb-0">À partir du tableau défini dans la fonction <code>Question9()</code>,
+          retournez la deuxième plus grande valeur.</p>
+      </div>
+      <button 
+        type="button" 
+        class="btn btn-primary me-3 mb-3" 
+        onclick="document.getElementById('reponse9').textContent = Question9()"
+      >
+        Afficher la réponse
+      </button>
+      <div id="reponse9" class="d-inline-block"></div>
+    </div>   
+
+    <div class="container mb-5">
+      <h2>Question 10</h2>
+      <div class="alert alert-secondary mt-3" role="alert">
+        <p class="mb-0">À partir des deux tableaux définis dans la fonction <code>Question10()</code>,
+        Retournez la paire dont la somme se rapproche le plus de la cible. 
+        Vous devez former une paire en prenant un nombre dans chaque tableau.</p>
+      </div>
+      <button 
+        type="button" 
+        class="btn btn-primary me-3 mb-3" 
+        onclick="document.getElementById('reponse10').textContent = Question10()"
+      >
+        Afficher la réponse
+      </button>
+      <div id="reponse10" class="d-inline-block"></div>
+    </div> 
+
+   
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
