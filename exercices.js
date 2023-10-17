@@ -51,14 +51,14 @@ function Question7() {
 
 function Question8() {
     const nombres = [10, 5, 7, 7, 10, 2, 1, 1, 2, 2, 5, 4];
-
-    //return ...
+    const resultats = nombres.filter((valeur, index) => nombres.indexOf(valeur) === index);
+    return resultats;
 }
 
 function Question9() {
     const nombres = [10, 5, 7, 7, 10, 2, 1, 1, 2, 2, 5, 4];
-    
-    //return ...
+    const resultats = nombres.sort((a,b) => parseInt(b) - parseInt(a)).splice(0, 2);
+    return resultats;
 }
 
 function Question10() {
